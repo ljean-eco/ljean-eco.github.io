@@ -1,4 +1,4 @@
-# leojean.github.io
+# ljean-eco.github.io
 
 Personal academic website. Plain HTML + CSS, no build step, no JavaScript.
 
