@@ -11,7 +11,7 @@
   --link-accent: #335c81;   /* muted steel blue, for hover only */
   --rule:        #e6e6e6;
   --bg:          #ffffff;
-  --max-width:   900px;
+  --max-width:   1200px;
 }
 
 * { box-sizing: border-box; }
