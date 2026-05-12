@@ -1,54 +1,68 @@
 # ljean-eco.github.io
 
 Personal academic website. Plain HTML + CSS, no build step, no JavaScript.
+Font: Inter (loaded from Google Fonts).
 
 ## Files
 
 ```
-index.html      → home page (bio, contact, affiliations)
-research.html   → working papers and work in progress
-teaching.html   → courses taught
-cv.html         → embeds cv.pdf as a download + inline preview
+index.html      → home (bio, contact, affiliations)
+research.html   → papers; click each title to expand the abstract
+teaching.html   → past teaching
+cv.html         → embeds cv.pdf for inline preview + download
 style.css       → all styling
-cv.pdf          → upload your latest CV PDF here (replace as needed)
-photo.jpg       → upload your photo here (referenced from index.html)
+cv.pdf          → drop your CV PDF here (replace whenever updated)
+photo.jpg       → drop your photo here (referenced from index.html)
 ```
 
 ## To edit text
 
-Open any `.html` file in any text editor (or GitHub's web pencil icon).
-Find the section you want to change, edit, save. Commit. Done.
+Open any `.html` file in GitHub via the pencil icon. Edit. Commit.
+Site refreshes within 30 seconds.
 
 ## To replace the placeholder photo
 
-1. Add a photo named `photo.jpg` (or any name) to this folder.
-2. In `index.html`, find the line:
+1. Upload a photo named `photo.jpg` to this folder.
+2. In `index.html`, find this line:
    ```html
-   <!-- Replace this with: <img src="photo.jpg" alt="Léo Jean"> -->
-   photo
+   <!-- Replace with: <img src="photo.jpg" alt="Léo Jean"> -->
+   Photo
    ```
-   Replace the word `photo` with `<img src="photo.jpg" alt="Léo Jean">`.
-   Delete the comment line if you want.
+   Replace the word `Photo` with `<img src="photo.jpg" alt="Léo Jean">`.
+
+## To add an abstract
+
+In `research.html`, find the paper block. Replace this line:
+
+```html
+<p class="paper-abstract empty"></p>
+```
+
+with:
+
+```html
+<p class="paper-abstract">Your abstract text here.</p>
+```
+
+## To add a paper link
+
+Each paper has a `<a href="#">Latest version (PDF)</a>` line. Replace the `#`
+with your Dropbox / SSRN / arXiv URL.
+
+## To add a paper
+
+Copy any `<details class="paper">…</details>` block in `research.html`,
+paste it where you want, edit the contents.
 
 ## To update the CV
 
 Just replace `cv.pdf` with a new file of the same name. Nothing else changes.
 
-## To add a paper
-
-Copy one of the `<div class="paper">…</div>` blocks in `research.html`,
-paste it where you want, edit the contents.
-
 ## To add a social link
 
 In `index.html`, find the `<div class="social">` block. Uncomment a line
-and replace the URL/text, or add your own:
+(remove the `<!--` and `-->`) or add your own:
 
 ```html
-<a href="https://scholar.google.com/citations?user=YOURID">google scholar</a>
+<a href="https://scholar.google.com/citations?user=YOURID">Google Scholar</a>
 ```
-
-## Fonts
-
-EB Garamond (body) + Inter Tight (nav/headings), loaded from Google Fonts.
-No installation needed.
