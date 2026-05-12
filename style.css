@@ -114,15 +114,15 @@ strong, b { font-weight: 600; }
 /* ---------- home: photo + bio side by side ---------- */
 .intro {
   display: grid;
-  grid-template-columns: 200px 1fr;
+  grid-template-columns: 300px 1fr;
   gap: 2.5rem;
   align-items: start;
   margin-bottom: 2rem;
 }
 
 .photo {
-  width: 200px;
-  height: 250px;
+  width: 300px;
+  height: 375px;
   background: #f3f3f3;
   border: 1px solid var(--rule);
   display: flex;
@@ -286,7 +286,7 @@ footer {
   header { flex-direction: column; align-items: flex-start; gap: 0.75rem; }
   nav a { margin-left: 0; margin-right: 1.25rem; }
   .intro { grid-template-columns: 1fr; gap: 1.5rem; }
-  .photo { width: 160px; height: 200px; }
+  .photo { width: 220px; height: 275px; }
   h1 { font-size: 1.5rem; }
   .course { flex-direction: column; gap: 0.1rem; }
 }
