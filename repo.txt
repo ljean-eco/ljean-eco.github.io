@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://ljean-eco.github.io/sitemap.xml
